@@ -90,7 +90,7 @@ class TableauReport extends React.Component {
   getUrl() {
     const { token } = this.props;
     const parsed = url.parse(this.props.url, true);
-    const query = '?:embed=yes&:comments=no&:toolbar=yes&:refresh=yes';
+    const query = '?:embed=yes&:comments=no&:toolbar=no&:refresh=yes&:showShareOptions=false';
 
     if (!this.state.didInvalidateToken && token) {
       this.invalidateToken();
